@@ -25,6 +25,7 @@ class TestJsonData (unittest.TestCase):
     for key in REQUIRED_KEYS:
       self.assertIn(key, data, msg="Required data")
       
+    self.assertEqual(file, '{}.json'.format(data['username']), msg='File name does not match username.')
     now = arrow.utcnow()
     joined = arrow.get(data['date_joined'])
     self.assertFalse(joined.datetime > now.datetime, msg="Can't join in the future")
