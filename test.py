@@ -19,9 +19,9 @@ class TestJsonData (unittest.TestCase):
           with open(full_path, 'r') as fh:
             data = fh.read()
             data = json.loads(data)
-            self.data_check(data)
+            self.data_check(file, data)
             
-  def data_check (self, data):
+  def data_check (self, file, data):
     for key in REQUIRED_KEYS:
       self.assertIn(key, data, msg="Required data")
       
