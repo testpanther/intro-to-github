@@ -1,6 +1,4 @@
-{
-  "first_name": "Ryan",
-  "username": "meowmeowcomputers",
-  "fun_fact": "I like popcorn",
-  "date_joined": "2017-04-08T10:00:00.000-05:00"
-}
+first_name: "Ryan",
+username: "meowmeowcomputers",
+fun_fact: "I like popcorn",
+date_joined: "2017-04-08T10:00:00.000-05:00"
